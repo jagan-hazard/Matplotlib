@@ -1,5 +1,5 @@
 # Matplotlib
-Some of the basics Plots in matplotlib. 
+Some of the basics in matplotlib. 
 
 commonly used markers:
 =======================
@@ -38,32 +38,32 @@ commonly used colors:
 
 Simple Plot along with various attributes:
 ============================================
-from matplotlib import pyplot  as plt
-import numpy as np
-plt.plot([1,2,3,4,5],[1,2,3,4,5], 'g^') #plt.plot(x, y, linewidth=2.0, color='r', label='line 1')
-#plt.axis([0, 10, 0, 10]) #plt.axis([xmin, xmax, ymin, ymax]) sets specifies the viewport of the axes
-#plt.xlim(0,4)
-#plt.ylim(0,4)
-plt.xticks(np.arange(1, 10, 2.0)) #plt.xticks(np.arange(min_val, max_values(excludes last values), interval_value))
-plt.legend(['test','train'], loc='upper right')
-#plt.xscale("log")
-#plt.xaxis.set_major_formatter(np.arange(0, 10, 0.5))
-plt.xlabel('X-axis')
-plt.ylabel('Y-axis')
-plt.title('graph')
-plt.show
+        from matplotlib import pyplot  as plt
+        import numpy as np
+        plt.plot([1,2,3,4,5],[1,2,3,4,5], 'g^') #plt.plot(x, y, linewidth=2.0, color='r', label='line 1')
+        #plt.axis([0, 10, 0, 10]) #plt.axis([xmin, xmax, ymin, ymax]) sets specifies the viewport of the axes
+        #plt.xlim(0,4)
+        #plt.ylim(0,4)
+        plt.xticks(np.arange(1, 10, 2.0)) #plt.xticks(np.arange(min_val, max_values(excludes last values), interval_value))
+        plt.legend(['test','train'], loc='upper right')
+        #plt.xscale("log")
+        #plt.xaxis.set_major_formatter(np.arange(0, 10, 0.5))
+        plt.xlabel('X-axis')
+        plt.ylabel('Y-axis')
+        plt.title('graph')
+        plt.show
 ---------------------------------------------------------------------------------------
 
 Adding multiple plots
 ===============================
 
-from matplotlib import pyplot  as plt
-plt.plot([1,2,3,4,5],[1,2,3,4,5])
-plt.plot([1,2,3,4,5],[5,4,3,2,1])
-plt.xlabel('X-axis')
-plt.ylabel('Y-axis')
-plt.title('graph')
-plt.show
+        from matplotlib import pyplot  as plt
+        plt.plot([1,2,3,4,5],[1,2,3,4,5])
+        plt.plot([1,2,3,4,5],[5,4,3,2,1])
+        plt.xlabel('X-axis')
+        plt.ylabel('Y-axis')
+        plt.title('graph')
+        plt.show
 ---------------------------------------------------------------------------------------------
 Adding styles to the graph and adding legends
 ==============================================
